@@ -1,6 +1,8 @@
 # foldem
 
-A new Flutter project.
+Web, Android, IOS 플랫폼을 모두 지원하는 Flutter Porject.
+
+포커 게임 Holdem의 타이머 역할
 
 ## Getting Started
 
