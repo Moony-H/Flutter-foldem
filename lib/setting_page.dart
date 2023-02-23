@@ -3,20 +3,21 @@ import 'dart:ui';
 import 'package:duration_picker/duration_picker.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:foldem/widget/TimePicker.dart';
 
-class ListTest extends StatefulWidget {
+import 'model/Round.dart';
+
+class RoundSettingPage extends StatefulWidget {
   final List<Round> items;
 
-  const ListTest({super.key, required this.items});
+  const RoundSettingPage({super.key, required this.items});
 
   @override
-  ListTestState createState() {
-    return ListTestState();
+  RoundSettingPageState createState() {
+    return RoundSettingPageState();
   }
 }
 
-class ListTestState extends State<ListTest> {
+class RoundSettingPageState extends State<RoundSettingPage> {
   @override
   Widget build(BuildContext context) {
     const title = 'Dismissing Items';
@@ -70,18 +71,7 @@ class ListTestState extends State<ListTest> {
   }
 }
 
-class Round {
-  int smallBlind;
-  int bigBlind;
-  int ante;
-  int timeSec;
 
-  Round(
-      {required this.smallBlind,
-      required this.bigBlind,
-      required this.ante,
-      required this.timeSec});
-}
 
 class RoundItemWidget extends StatefulWidget {
   final void Function(int) onDeleteButtonClicked;
